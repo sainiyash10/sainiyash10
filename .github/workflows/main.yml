@@ -1,0 +1,41 @@
+name: Update GitHub Stats Cards
+
+on:
+  schedule:
+    # Runs once a day at 03:00 UTC
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch real GitHub stats and regenerate stats.svg / contribution.svg
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: sainiyash10
+          STATS_OUT: stats.svg
+          CONTRIBUTION_OUT: contribution.svg
+        run: python3 scripts/fetch_github_stats.py
+
+      - name: Commit changes if anything updated
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stats.svg contribution.svg
+          git diff --staged --quiet || git commit -m "chore: update GitHub stats cards [skip ci]"
+          git push
