@@ -55,7 +55,7 @@
       <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.55s" fill="freeze"/>
       <text x="24" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="14">📦</text>
       <text x="46" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#c9a9e9">Public Repos:</text>
-      <text x="230" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#4dfa90">3</text>
+      <text x="230" y="128" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#4dfa90">2</text>
     </g>
 
     <!-- Row 4: PRs -->
