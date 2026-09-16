@@ -94,10 +94,10 @@
       </g>
     </g>
 
-    <!-- Streak number "1" — yellow, centred inside ring -->
+    <!-- Streak number "0" — yellow, centred inside ring -->
     <text x="247" y="75" text-anchor="middle"
           font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="800"
-          fill="#f9e84a" opacity="0">1
+          fill="#f9e84a" opacity="0">0
       <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.1s" fill="freeze"/>
     </text>
 
@@ -111,7 +111,7 @@
     <!-- Centre date — white -->
     <text x="247" y="140" text-anchor="middle"
           font-family="Segoe UI, Arial, sans-serif" font-size="10.5"
-          fill="#ffffff" opacity="0">Sep 14 – Sep 14, 2026
+          fill="#ffffff" opacity="0">–
       <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="1.1s" fill="freeze"/>
     </text>
 
