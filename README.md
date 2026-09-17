@@ -13,7 +13,7 @@
 <div align="center">
 <table width="100%">
 <tr>
-<td width="34%" valign="top" align="center">
+<td width="34%" valign="middle" align="center">
 
 <p align="center">
 <img src="lanyard.svg?v=1" alt="Yash Saini ID badge" width="80%">
@@ -33,7 +33,7 @@
 </table>
 </div>
 
-## 🤝 Let's Connect
+<p align="left"><strong>🤝 Let's Connect</strong></p>
 
 <!-- TODO: swap these for your real profile links -->
 <div align="center">
@@ -44,8 +44,6 @@
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sainiyash10)
 
 <br>
-
-<img src="https://komarev.com/ghpvc/?username=sainiyash10&style=for-the-badge&color=ff5fc4&labelColor=6b6b6b&label=PROFILE+VIEWS" alt="profile views">
 
 <sub><strong>🌱 “Consistency is what transforms effort into achievements.”</strong></sub>
 
